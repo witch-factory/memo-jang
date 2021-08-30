@@ -5,7 +5,7 @@ import Note from './note';
 
 const NoteGlobalStyle = createGlobalStyle`
   body{
-    background:#e3fafc
+    background:#e3fafc;
   }
 `;
 

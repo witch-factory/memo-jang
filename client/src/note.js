@@ -29,15 +29,38 @@ const NoteListBlock = styled(NoteBasicBlock)`
   background:#f1f3f5;
 `;
 
+const NoteEditBlock = styled.textarea`
+  width:100%;
+  height:90%;
+  border: 1px solid black;
+  border-radius: 7px;
+  overflow:auto;
+  white-space: pre;
+  font-size:12pt;
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, white 10px, transparent 10px),
+    linear-gradient(to left, white 10px, transparent 10px),
+    repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+  line-height: 31px;
+  padding: 8px 10px;
+  resize:none;
+`;
+
 const Note = () => (
   <>
     <FlexContainer>
       <NoteListButton color="#b197fc">노트 추가</NoteListButton>
       <NoteListButton color="#ff6b6b">노트 삭제</NoteListButton>
     </FlexContainer>
-    <NoteListBlock />
-    <NoteListBlock />
-    <NoteListBlock />
+    <FlexContainer>
+      <div>
+        <NoteListBlock />
+        <NoteListBlock />
+        <NoteListBlock />
+      </div>
+      <NoteEditBlock />
+    </FlexContainer>
   </>
 );
 
