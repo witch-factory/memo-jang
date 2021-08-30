@@ -1,13 +1,12 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import About from './About';
-import Home from './Home';
-import Note from './note.js';
+// eslint-disable-next-line import/extensions
+import { Route } from 'react-router-dom';
+import Note from './note';
 
 function App() {
   return (
     <div>
-      <Note />
+      <Route path="/" component={Note} />
     </div>
   );
 }

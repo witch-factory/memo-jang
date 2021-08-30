@@ -3,14 +3,15 @@ import { createGlobalStyle } from 'styled-components';
 
 const NoteGlobalStyle = createGlobalStyle`
   body{
-    color:#99e9f2
+    background:#e3fafc
   }
 `;
 
 const Note = () => (
-  <NoteGlobalStyle>
+  <>
+    <NoteGlobalStyle />
     <h1>안녕하세요</h1>
-  </NoteGlobalStyle>
+  </>
 );
 
 export default Note;
