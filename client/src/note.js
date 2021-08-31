@@ -6,6 +6,11 @@ const FlexContainer = styled.div`
   margin:5px;
 `;
 
+const NoteContainer = styled(FlexContainer)`
+  height:100%;
+  width:100%;
+`;
+
 const NoteBasicBlock = styled.div`
   background: ${(props) => props.color || 'white'};
   color:white;
@@ -37,6 +42,7 @@ const NoteEditBlock = styled.textarea`
   overflow:auto;
   white-space: pre;
   font-size:12pt;
+  flex:1;
   background-attachment: local;
   background-image:
     linear-gradient(to right, white 10px, transparent 10px),
@@ -53,14 +59,14 @@ const Note = () => (
       <NoteListButton color="#b197fc">노트 추가</NoteListButton>
       <NoteListButton color="#ff6b6b">노트 삭제</NoteListButton>
     </FlexContainer>
-    <FlexContainer>
+    <NoteContainer>
       <div>
         <NoteListBlock />
         <NoteListBlock />
         <NoteListBlock />
       </div>
       <NoteEditBlock />
-    </FlexContainer>
+    </NoteContainer>
   </>
 );
 
