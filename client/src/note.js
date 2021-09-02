@@ -7,12 +7,14 @@ const FlexContainer = styled.div`
 `;
 
 const ColumnContainer = styled(FlexContainer)`
+  height: ${(props) => props.height || 'auto'};
+  width: ${(props) => props.width || 'auto'};
   flex-direction: column;
 `;
 
 const RowContainer = styled(FlexContainer)`
-  height:100%;
-  width:100%;
+  height: ${(props) => props.height || 'auto'};
+  width: ${(props) => props.width || 'auto'};
   flex-direction: row;
 `;
 
@@ -70,7 +72,7 @@ const NoteEditBlock = styled.textarea`
 `;
 
 const Note = () => (
-  <ColumnContainer>
+  <ColumnContainer width="100%" height="100%">
     <RowContainer>
       <NoteListButton color="#b197fc">노트 추가</NoteListButton>
       <NoteListButton color="#ff6b6b">노트 삭제</NoteListButton>
