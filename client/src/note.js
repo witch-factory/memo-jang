@@ -52,10 +52,10 @@ const NoteListBlock = styled(NoteBasicBlock)`
 `;
 
 const NoteEditBlock = styled.textarea`
-  width:100%;
-  height:100%;
+  width:95%;
+  height:95%;
   border: 1px solid black;
-  border-radius: 7px;
+  border-radius: 10px;
   overflow:auto;
   white-space: pre;
   font-size:12pt;
@@ -67,7 +67,6 @@ const NoteEditBlock = styled.textarea`
     repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
   line-height: 31px;
   padding: 8px 10px;
-  margin:3px;
   resize:none;
 `;
 
@@ -83,7 +82,9 @@ const Note = () => (
         <NoteListBlock />
         <NoteListBlock />
       </ColumnContainer>
-      <NoteEditBlock />
+      <ColumnContainer width="100%" height="100%">
+        <NoteEditBlock />
+      </ColumnContainer>
     </RowContainer>
   </ColumnContainer>
 );

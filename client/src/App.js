@@ -1,6 +1,6 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
-import {createGlobalStyle} from 'styled-components';
+import { Route } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 import Note from './note';
 
 const NoteGlobalStyle = createGlobalStyle`
@@ -20,11 +20,11 @@ const NoteGlobalStyle = createGlobalStyle`
   }
 `;
 
-function App () {
+function App() {
   return (
     <>
-      <NoteGlobalStyle/>
-      <Route path="/" component={Note}/>
+      <NoteGlobalStyle />
+      <Route path="/" component={Note} />
     </>
   );
 }
