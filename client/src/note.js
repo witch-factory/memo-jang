@@ -77,7 +77,7 @@ const Note = () => (
       <NoteListButton color="#b197fc">노트 추가</NoteListButton>
       <NoteListButton color="#ff6b6b">노트 삭제</NoteListButton>
     </RowContainer>
-    <RowContainer>
+    <RowContainer width="100%" height="100%">
       <ColumnContainer>
         <NoteListBlock />
         <NoteListBlock />
