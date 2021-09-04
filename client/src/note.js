@@ -1,22 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
-
-const FlexContainer = styled.div`
-  display:flex;
-`;
-
-const ColumnContainer = styled(FlexContainer)`
-  height: ${(props) => props.height || 'auto'};
-  width: ${(props) => props.width || 'auto'};
-  flex-direction: column;
-`;
-
-const RowContainer = styled(FlexContainer)`
-  height: ${(props) => props.height || 'auto'};
-  width: ${(props) => props.width || 'auto'};
-  flex-direction: row;
-`;
+import { ColumnContainer, RowContainer } from './container';
 
 const NoteBasicBlock = styled.div`
   background: ${(props) => props.color || 'white'};

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Note from './note';
+import Login from './login';
 
 const NoteGlobalStyle = createGlobalStyle`
   * {
@@ -24,7 +25,8 @@ function App() {
   return (
     <>
       <NoteGlobalStyle />
-      <Route path="/" component={Note} />
+      <Route path="/memo" component={Note} exact />
+      <Route path="/login" component={Login} exact />
     </>
   );
 }
