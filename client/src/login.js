@@ -11,8 +11,9 @@ const UserInput = styled.input`
 
 const Login = () => (
   <ColumnContainer>
+    <h3>Username</h3>
     <UserInput type="text" name="username" placeholder="username" />
-    <br />
+    <h3>Password</h3>
     <UserInput type="password" name="password" placeholder="password" />
   </ColumnContainer>
 );
