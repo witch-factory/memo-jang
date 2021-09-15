@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ColumnContainer, NoteListButton, RowContainer } from './container';
+import { ColumnContainer, RowContainer } from './container';
+import { NoteListButton } from './component';
 
 const LoginLogo = styled.h1`
   margin:5px 20px;
@@ -24,6 +25,7 @@ const LoginBackground = styled.div`
   height:100%;
   width:auto;
   display:flex;
+  justify-content: center;
   flex-direction: column;
 `;
 

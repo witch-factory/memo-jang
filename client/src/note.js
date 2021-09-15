@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  ColumnContainer, RowContainer, NoteBasicBlock, NoteListButton,
+  ColumnContainer, RowContainer,
 } from './container';
+import {
+  NoteBasicBlock, NoteListButton,
+} from './component';
 
 const NoteListBlock = styled(NoteBasicBlock)`
   width: 18rem;
